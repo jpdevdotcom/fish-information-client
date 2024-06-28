@@ -8,7 +8,9 @@ export default function FishGenera() {
     useEffect(() => {
         const fetchFishGenera = async () => {
             try {
-                const res = await axios.get("http://localhost:8800/fish-data");
+                const res = await axios.get(
+                    "http://http://fish-information-system-production.up.railway.app/fish-data"
+                );
                 setGenera(res.data);
             } catch (err) {
                 console.log(err);

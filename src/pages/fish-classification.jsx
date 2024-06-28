@@ -14,7 +14,7 @@ export default function FishClassification() {
         const fetchImageResult = async (param) => {
             try {
                 const res = await axios.get(
-                    `http://localhost:8800/filter-fish/${param}`
+                    `http://http://fish-information-system-production.up.railway.app/filter-fish/${param}`
                 );
                 setImageResult(res.data);
             } catch (err) {
