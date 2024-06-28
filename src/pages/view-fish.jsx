@@ -7,9 +7,7 @@ export default function ViewFish() {
     useEffect(() => {
         const fetchAllFish = async () => {
             try {
-                const res = await axios.get(
-                    `${process.env.REACT_APP_BACKEND_URL}/fish-data`
-                );
+                const res = await axios.get("http://localhost:8800/fish-data");
                 setFish(res.data);
             } catch (err) {
                 console.log(err);
